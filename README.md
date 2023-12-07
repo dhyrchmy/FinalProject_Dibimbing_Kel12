@@ -42,4 +42,4 @@ Port =  5432
 METABASE_USER_EMAIL=admin@admin.com
 METABASE_USER_PASSWORD=superadmin123
 ```
-   Tabel-tabel hasil ETL dan data modelling sudah terbuat di dalam metabase.
+   Tabel-tabel hasil ETL dan data modelling sudah terbuat di dalam metabase.\
