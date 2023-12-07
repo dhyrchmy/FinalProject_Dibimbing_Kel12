@@ -19,13 +19,22 @@ DW_POSTGRES_DB=data_warehouse
 DW_POSTGRES_PORT=5433
 DW_POSTGRES_CONTAINER_NAME=dataeng-warehouse-postgres
 ```
-6. Selanjutnya, lakukan data modelling dengan PostgresOperator dalam airflow. Sebelumnya, buat koneksi pada airflow dengan cara:
-   a. Tekan "Admin" pada airflow UI, 
-   b. Tekan "Connection", 
-   c. Buat connection baru, 
+6. Selanjutnya, lakukan data modelling dengan PostgresOperator dalam airflow. Sebelumnya, buat koneksi pada airflow dengan cara:\
+   a. Tekan "Admin" pada airflow UI\
+   b. Tekan "Connection"\ 
+   c. Buat connection baru\
    d. Isi connection dengan:
-7. Trigger dag-sql.py untuk menjalankan task data modelling, yaitu membuat dimension table dan fact table dan tunggu sampai semua task success.
-8. Lakukan visualisasi data dan pembuatan dashboard di metabase dengan mengakses **http://localhost:3001** dengan user sebagai berikut:
+```sh
+Connection Id = postgres-fp-12
+Connection Type = Postgres
+Host = dataeng-warehouse-postgres
+Schema = data_warehouse
+Login = user
+Port =  5432
+```
+   Kemudian save connection.
+8. Trigger dag-sql.py untuk menjalankan task data modelling, yaitu membuat dimension table dan fact table dan tunggu sampai semua task success.
+9. Lakukan visualisasi data dan pembuatan dashboard di metabase dengan mengakses **http://localhost:3001** dengan user sebagai berikut:
 ```sh
 METABASE_USER_EMAIL=admin@admin.com
 METABASE_USER_PASSWORD=superadmin123
