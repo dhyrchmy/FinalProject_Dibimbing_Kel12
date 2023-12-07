@@ -34,7 +34,8 @@ Schema = data_warehouse
 Login = user
 Port =  5432
 ```
-   Kemudian save connection.
+   e. Save connection. Pastikan connection postgres-fp-12 sudah ada dalam list connection.\
+   
 8. Trigger dag-sql.py untuk menjalankan task data modelling, yaitu membuat dimension table dan fact table dan tunggu sampai semua task success.
 9. Lakukan visualisasi data dan pembuatan dashboard di metabase dengan mengakses **http://localhost:3001** dengan user sebagai berikut:
 ```sh
