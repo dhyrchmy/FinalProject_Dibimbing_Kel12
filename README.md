@@ -1,4 +1,6 @@
 # FinalProject_Dibimbing_Kel12
+Repository ini berisi program untuk melakukan ETL dan data modelling dari raw data di folder "data".\
+\
 Pada folder "data" terdapat 26 file raw data dengan format csv, xls, json, avro, dan parquet.
 Untuk menjalankan program ETL dan data modelling, lakukan langkah berikut:
 1. Masuk ke directory pekerjaan, dan build semua image dengan perintah:
